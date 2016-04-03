@@ -11,6 +11,7 @@ require_once (__DIR__ . "/../utils/security.php");
 // require DAOs
 require_once (__DIR__ . "/../models/User.php");
 require_once (__DIR__ . "/../models/Menu.php");
+require_once (__DIR__ . "/../models/Item.php");
 
 function get_user($email) {
     return User::get_user_object($email);
@@ -45,4 +46,28 @@ function all_menus() {
 
 function get_menu($menu_id) {
     return Menu::get_menu_by_id($menu_id);
+}
+
+function all_items() {
+    return Item::get_all_items();
+}
+
+function item_in_menu($item_id, $menu_id) {
+    return Item::item_is_in_menu($item_id, $menu_id);
+}
+
+function add_item($item_id, $menu_id) {
+    Item::add_item_to_menu($item_id, $menu_id);
+}
+
+function delete_item($item_id, $menu_id) {
+    Item::delete_item_from_menu($item_id, $menu_id);
+}
+
+function get_all_items($menu_id) {
+    return Menu::get_all_item_ids($menu_id);
+}
+
+function get_item($item_id) {
+    return Item::get_item_by_id($item_id);
 }

@@ -38,6 +38,7 @@ require_once (__DIR__ . "/nav_bar.php");
                 <p>This is a group project in PHP class of Marlabs Inc.</p>
                 <p>The user can sign in and sign up as both a customer or a restaurant staff.</p>
                 <p>The staff can decide what items are on each menu while the customers can choose one item from each category on a menu.</p>
+                <p>After that, the customer can choose the quantity of their meals and place order.</p>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -47,21 +48,21 @@ require_once (__DIR__ . "/nav_bar.php");
         <div class="box">
             <div class="col-lg-12">
                 <hr>
-                <h2 class="intro-text text-center">Our
-                    <strong>Team</strong>
+                <h2 class="intro-text text-center">Our Team:
+                    <strong>The Devil's Rejects</strong>
                 </h2>
                 <hr>
             </div>
             <div class="col-sm-6 text-center">
-                <img width="300" height="260" src="https://lh3.googleusercontent.com/-szdjRsswLvQ/AAAAAAAAAAI/AAAAAAAAAIg/CG7A9m8yI0Y/s100-c-k-no/photo.jpg" alt="">
+                <img width="300" height="260" src="https://lh3.googleusercontent.com/-szdjRsswLvQ/AAAAAAAAAAI/AAAAAAAAAIg/CG7A9m8yI0Y/s100-c-k-no/photo.jpg" alt=Jiaming Dong">
                 <h3>Jiaming Dong
-                    <small>Team Member</small>
+                    <small>Administrator</small>
                 </h3>
             </div>
             <div class="col-sm-6 text-center">
-                <img width="300" height="260" src="http://placehold.it/750x450" alt="">
+                <img width="300" height="260" src="https://i.ytimg.com/vi/qSufrWXQSxg/hqdefault.jpg" alt="Max Geng">
                 <h3>Max Geng
-                    <small>Team Member</small>
+                    <small>Customer Service</small>
                 </h3>
             </div>
             <div class="clearfix"></div>

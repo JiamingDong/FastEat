@@ -43,4 +43,20 @@ class Menu
 
         return mysqli_fetch_object($result, "Menu");
     }
+
+    public static function get_all_item_ids($menu_id) {
+        $query = "SELECT * FROM MenuItemRelations WHERE menu_id = '$menu_id'";
+        $connection = get_connection();
+        $resultSet = mysqli_query($connection, $query);
+
+        $all_item_ids = array();
+        if ($resultSet && mysqli_num_rows($resultSet) > 0) {
+            while ($row = mysqli_fetch_assoc($resultSet)) {
+                $item_id = $row["item_id"];
+                array_push($all_item_ids, $item_id);
+            }
+        }
+
+        return $all_item_ids;
+    }
 }

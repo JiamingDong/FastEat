@@ -8,6 +8,7 @@
 
 require_once (__DIR__ . "/../configurations/config.php");
 require_once (__DIR__ . "/../controllers/ensure_session.php");
+require_once (__DIR__ . "/../controllers/actions_controller.php");
 require_once (__DIR__ . "/../services/data_service.php");
 
 $current_user = "Undefined user";
@@ -26,8 +27,8 @@ require_once (__DIR__ . "/nav_bar.php");
 ?>
 
 <script type="text/javascript">
+    var current_menu = JSON.parse(menu_json_str);
     $(function () {
-        var current_menu = JSON.parse(menu_json_str);
         $("#menu_name").text(current_menu.menu_name);
         $("img#menu_img").attr("src", current_menu.image_url);
         $("p#menu_desc").text(current_menu.menu_description);

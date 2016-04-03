@@ -21,4 +21,10 @@ define("mysql_DATABASE","FastEatDB");
 
 define("user_type_CUSTOMER", "0");
 define("user_type_STAFF", "1");
+
+define("item_type_APPETIZER", "0");
+define("item_type_SOUP", "1");
+define("item_type_BEVERAGE", "2");
+define("item_type_MEAT", "3");
+define("item_type_SALAD", "4");
 ?>
